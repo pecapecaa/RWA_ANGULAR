@@ -1,0 +1,125 @@
+{
+  "vinarija": [
+    {
+      "id": 1,
+      "naziv": "Caberne Sauvignon",
+      "vrsta": "white",
+      "procenat": "16",
+      "berba": "2018",
+      "cena": "7500",
+      "lajk": 32,
+      "dislajk": 17,
+      "detalji": "Cabernet Sauvignon is one of the world's most widely recognized red wine grape varieties. It is grown in nearly every major wine producing country among a diverse spectrum of climates from Canada's Okanagan Valley to Lebanon's Beqaa Valley. Cabernet Sauvignon became internationally recognized through its prominence in Bordeaux wines where it is often blended with Merlot and Cabernet Franc. From France, the grape spread across Europe and to the New World where it found new homes in places like California's Santa Cruz Mountains, Napa Valley, New Zealand's Hawkes Bay, Australia's Margaret River and Coonawarra regions, and Chile's Maipo Valley and Colchagua. For most of the 20th century, it was the world's most widely planted premium red wine grape until it was surpassed by Merlot in the 1990s. However, by 2015, Cabernet Sauvignon had become the most widely planted wine grape, with a total of 341000ha under vine worldwide."
+    },
+    {
+      "id": 2,
+      "naziv": "Oliver",
+      "vrsta": "white",
+      "procenat": "12",
+      "berba": "2006",
+      "cena": "4000",
+      "lajk": 15,
+      "dislajk": 5,
+      "detalji": "Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry."
+    },
+    {
+      "naziv": "Carmenet Chardonnay",
+      "vrsta": "red",
+      "procenat": "12",
+      "berba": "2008",
+      "cena": "5400",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Carmenet Chardonnay is a lovely straw-colored wine with hints of apple, banana, and vanilla. This opulent and sensual wine finishes with butterscotch and tropical fruit and ends with a smooth, crisp, enjoyable finish.",
+      "id": 3
+    },
+    {
+      "naziv": "Chateau Ste. Michelle",
+      "vrsta": "white",
+      "procenat": "12",
+      "berba": "2001",
+      "cena": "5000",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Chateau Ste. Michelle is Washington state's founding winery featuring award-winning wines and an unparalleled tasting experience at our historic chateau and grounds near Seattle.",
+      "id": 4
+    },
+    {
+      "naziv": "Château Lafite Rothschild",
+      "vrsta": "red",
+      "procenat": "12",
+      "berba": "2004",
+      "cena": "2000",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Château Lafite Rothschild is a wine estate in France, owned by members of the Rothschild family since the 19th century. The name Lafite comes from the surname of the La Fite family. Lafite was one of four wine-producing châteaux of Bordeaux originally awarded First Growth status in the 1855 Classification, which was based on the prices and wine quality at that time. Since then, it has been a consistent producer of one of the world's most expensive red wines.",
+      "id": 5
+    },
+    {
+      "naziv": "Barefoot Cellars",
+      "vrsta": "white",
+      "procenat": "12",
+      "berba": "2002",
+      "cena": "1000",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Barefoot is in the business of making great wine that has something for everyone, from our sweet reds and refreshing whites to our delicious bubbly.",
+      "id": 6
+    },
+    {
+      "naziv": "Guinnes",
+      "vrsta": "red",
+      "procenat": "14",
+      "berba": "2010",
+      "cena": "4700",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.",
+      "id": 7
+    },
+    {
+      "naziv": "Methuselah",
+      "vrsta": "red",
+      "procenat": "14",
+      "berba": "2010",
+      "cena": "4000",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.",
+      "id": 8
+    },
+    {
+      "naziv": "Kendall-Jackson Vineyard Estates",
+      "vrsta": "red",
+      "procenat": "12",
+      "berba": "2009",
+      "cena": "1999",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.",
+      "id": 9
+    },
+    {
+      "naziv": "Jacob's Creek",
+      "vrsta": "white",
+      "procenat": "15",
+      "berba": "2004",
+      "cena": "3000",
+      "lajk": 10,
+      "dislajk": 5,
+      "detalji": "Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "naziv": "Rizling",
+      "vrsta": "belo",
+      "procenat": "18",
+      "berba": "2018",
+      "cena": "2999",
+      "lajk": 0,
+      "dislajk": 0,
+      "detalji": "Nema "
+    }
+  ]
+}

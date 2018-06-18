@@ -1,0 +1,19 @@
+<div *ngIf="detalji != null">
+  <div class="detalji">
+    <h1>Detaljan prikaz:</h1>
+    <div class="sadrzaj">
+        <h3>Naziv:</h3> {{detalji.naziv}} <br/>
+        <h3>Vrsta:</h3> {{detalji.vrsta}} <br/>
+        <h3>Cena:</h3> {{detalji.cena}} <br/>
+        <h3>Procenat:</h3> {{detalji.procenat}}<br/>
+        <h3>Lajk:</h3> {{detalji.lajk}}<br/>
+        <h3>Dislajk:</h3> {{detalji.dislajk}}<br/><br/>
+        <h3>Detalji:</h3>{{detalji.detalji}}<br/><br/>
+        <div class="btnn"><button (click)="Lajk()" mat-raised-button color="warn">Lajk</button></div>
+        <div class="btnn"><button (click)="Dislajk()" mat-raised-button color="warn">Dislajk</button></div>
+
+    </div>
+  </div>
+</div>
+
+

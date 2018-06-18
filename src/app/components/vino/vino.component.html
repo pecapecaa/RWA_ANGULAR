@@ -1,0 +1,6 @@
+<div class="vino" *ngIf="vino != null">
+    <h2>
+      {{ vino.naziv }}
+    </h2>
+    <div class="btnn"><button (click)="selectVino()" mat-raised-button color="warn">Prikazi</button></div>
+</div>

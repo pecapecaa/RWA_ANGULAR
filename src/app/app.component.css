@@ -1,0 +1,21 @@
+.heder{
+    height: 150px;
+    background-color: RGB(127, 26, 26);
+}
+
+.naslov{
+    text-align: center;
+    display: inline;
+    font-size: 25px;
+    float:left;
+    margin-top: 20px;
+    width:60%;
+    color:white;
+}
+.vinarija{
+    float:right;
+    display: inline;
+    width:40%;
+    text-align: right;
+    color:white;
+}

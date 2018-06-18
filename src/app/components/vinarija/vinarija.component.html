@@ -1,0 +1,8 @@
+  <div class="leftdiv">
+     <div *ngFor="let vino of vina">         <!--  public vina:Vino[]; -->
+      <app-vino [vino]="vino" (selectedEvent)="onSelected($event)" [selected]="vino === selectedVino"></app-vino>
+    </div>
+  </div>
+  <div class="rightdiv">
+    <app-vinodetalji [detalji]="selectedVino"></app-vinodetalji>
+  </div>

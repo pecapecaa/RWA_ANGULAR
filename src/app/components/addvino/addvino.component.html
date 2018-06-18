@@ -1,0 +1,56 @@
+<div class="pic">
+  <h1>Dodaj novo vino: </h1>
+    <div class="SingInUp" class="Kontejner">
+            <div class="row">
+                <div class="col25">
+                    Naziv:
+                </div>
+                <div class="col75">
+                    <input (input)="onUpdateNaziv($event)"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col25">
+                    Vrsta:
+                </div>
+                <div class="col75">
+                    <input  (input)="onUpdateVrsta($event)"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col25">
+                    Procenat:
+                </div>
+                <div class="col75">
+                    <input (input)="onUpdateProcenat($event)"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col25">
+                    Godina berba:
+                </div>
+                <div class="col75">
+                    <input (input)="onUpdateBerba($event)" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col25">
+                    Cena:
+                </div>
+                <div class="col75">
+                    <input (input)="onUpdateCena($event)" />
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col25">
+                      Detalji:
+                  </div>
+                  <div class="col75">
+                      <input (input)="onUpdateDetalji($event)" />
+                  </div>
+                </div>
+              <button mat-raised-button color="warn" (click)="addVino()">Potvrdi</button>
+        </div>
+</div>
+
+   
