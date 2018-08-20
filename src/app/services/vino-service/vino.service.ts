@@ -20,13 +20,13 @@ export class VinoService {
   public addVino(vino: Vino) {
 
     this.http.post('http://localhost:3005/vinarija', vino)
-              .subscribe(response => console.log(response)); // bez subscribe ne radi
+              .subscribe(response => console.log(response)); 
           
   }
 
   public updateVino(vino: Vino) {
     this.http.put(`http://localhost:3005/vinarija/${vino.id}`, vino)
-            .subscribe(response => console.log(response)); // bez subscribe ne radi
+            .subscribe(response => console.log(response)); 
   }
 
   public DeleteVino(vino: Vino) {

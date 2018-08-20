@@ -23,7 +23,6 @@ export class FetchVinoSuccess implements Action {
     type = types.VINO_FETCH_DONE;
     listaVino: Vino[]; // listaVino mu dodje kao payload u React-u
     constructor(vina: Vino[] ) {
-        console.log('fech vino succes',this.listaVino);
         this.listaVino = [...vina]; //koristimo [] da bi vratili niz
     }
 }

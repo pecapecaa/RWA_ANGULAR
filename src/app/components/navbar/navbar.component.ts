@@ -21,7 +21,6 @@ export class NavbarComponent implements OnInit {
   // na klik filtrira sve ostale vino
   najpopularnije() {
     this.store$.dispatch(new MostPopular());
-    console.log('Most popular ,action');
   }
 
 

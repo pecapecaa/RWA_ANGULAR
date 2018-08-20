@@ -5,7 +5,6 @@ import { VINO_FETCH_REQUESTED, MOST_POPULAR, SEARCH_VINO} from '../actions/types
 import { VinoService } from '../../services/vino-service/vino.service';
 import { FetchVinoSuccess, SearchVino } from '../actions/actions';
 
-//- Actions -> observable 
 @Injectable() 
 export class vinoEffects {
 
@@ -14,11 +13,11 @@ export class vinoEffects {
         private vinoService: VinoService    
     ) {}
     
-    //ovo slusa akciju VINO_FETCH_REQUESTED -> kao saga watcher u redux saga
+
     @Effect()
     loadBooks$ = this.actions$.ofType(VINO_FETCH_REQUESTED).pipe(
-            switchMap(() => {  // sa switchMap napravi novi observable i otkaze prethodni obs
-                return this.vinoService.getBooks().pipe(  // getBooks vraca Observable<Vino[]>
+            switchMap(() => {  
+                return this.vinoService.getBooks().pipe(  
                     map(vino => new FetchVinoSuccess(vino))
                 )}
             )
@@ -31,7 +30,6 @@ export class vinoEffects {
                 return this.vinoService.getBooks().pipe(
                     map(vino => {
                         let najpopularnijevino = vino.filter(vina => vina.lajk > 20);
-                        console.log('POPULAR',najpopularnijevino);
                         return new FetchVinoSuccess(najpopularnijevino)
                     })
                 )
