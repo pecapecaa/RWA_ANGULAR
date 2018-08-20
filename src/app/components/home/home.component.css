@@ -1,6 +1,15 @@
-.pic{
-    width: 100%;
+.welcome-image {
+    background-image: url("../../../assets/images/welcome.jpg");
     height: 700px;
-    background-image: url(../../../images/picture.jpg);
-    font-size: 50px;
+    width: 100%;
 }
+
+.welcome-message {
+    padding: 20% 60% 20% 20%; 
+    font-family: Impact, Charcoal, sans-serif;
+    color:   RGB(127, 26, 26); 
+}   
+
+.prikaz-centar {
+    margin: auto;
+} 

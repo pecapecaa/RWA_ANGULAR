@@ -1,21 +1,17 @@
-.heder{
-    height: 150px;
-    background-color: RGB(127, 26, 26);
+body {
+    width: 100%;
+}
+li {
+    list-style: none;
 }
 
-.naslov{
-    text-align: center;
-    display: inline;
-    font-size: 25px;
-    float:left;
-    margin-top: 20px;
-    width:60%;
-    color:white;
+.main {
+    width: 70%;
+    margin: 5px auto;
 }
-.vinarija{
-    float:right;
-    display: inline;
-    width:40%;
-    text-align: right;
-    color:white;
+
+prikaz-centar {
+    
+    margin: auto;
+    width: 65%;
 }

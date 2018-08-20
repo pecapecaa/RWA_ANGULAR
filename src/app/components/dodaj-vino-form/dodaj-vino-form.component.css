@@ -1,0 +1,12 @@
+.forma {
+    margin: auto;
+    margin-top: 3%;
+    width: 65%;
+    padding: 10%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.labela {
+    margin-right: 7px;
+}

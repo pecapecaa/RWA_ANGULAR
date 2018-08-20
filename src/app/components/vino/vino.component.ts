@@ -1,8 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {Vino} from '../../models/vino';
-import {State } from '../../store';
+import { Component, OnInit, Input } from '@angular/core';
+import { Vino } from '../../models/vino';
+import { VinoService} from '../../services/vino-service/vino.service';
+import { State } from '../../store/reducers';
+import { DeleteVino} from '../../store/actions/actions';
 import {Store} from '@ngrx/store';
-
 
 @Component({
   selector: 'app-vino',
@@ -11,18 +12,30 @@ import {Store} from '@ngrx/store';
 })
 export class VinoComponent implements OnInit {
 
-  @Input() public vino:Vino;    //input uzimanje podataka iz vinarije
-  @Input() public selected: boolean;
-  @Output() public selectedEvent: EventEmitter<Vino> = new EventEmitter();
-  
-  constructor(private store$: Store<State>) {
-    this.selected = false;
-   }
+@Input()  vino: Vino; 
+
+  constructor(
+    private vinoService: VinoService,
+    private store$: Store<State>
+  ) { }
 
   ngOnInit() {
+    
   }
-  public selectVino() {
-    this.selectedEvent.emit(this.vino);
+
+  public like() {
+    this.vino.lajk += 1;
+    this.vinoService.updateVino(this.vino);
   }
- 
+
+  public dislike()  {
+    this.vino.dislajk += 1;
+    this.vinoService.updateVino(this.vino);
+  }
+
+  public obrisiVino() {
+    this.vinoService.DeleteVino(this.vino);
+    this.store$.dispatch(new DeleteVino(this.vino));
+  }
+
 }

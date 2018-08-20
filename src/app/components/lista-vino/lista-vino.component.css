@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+}
+
+.prikazvino {
+    margin: 2% auto;
+    padding: 2%;
+    width: 65%;
+    border: 1px solid RGB(127, 26, 26);
+    border-radius: 8px;
+}
+
+.prikazvino:hover {
+    background-color:lightgray;
+}

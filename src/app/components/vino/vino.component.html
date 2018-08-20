@@ -1,6 +1,19 @@
-<div class="vino" *ngIf="vino != null">
-    <h2>
-      {{ vino.naziv }}
-    </h2>
-    <div class="btnn"><button (click)="selectVino()" mat-raised-button color="warn">Prikazi</button></div>
+<div *ngIf="vino != null">
+    <p>{{ vino.naziv}}</p>
+    <p>Vrsta: {{vino.vrsta}} </p>
+    <p>Procenat: {{vino.procenat}} </p>
+    <p>Berba: {{vino.berba}} </p>
+    <p>Cena: {{vino.cena}} </p>
+    <p>Likes: {{vino.lajk}} | Dislikes: {{vino.dislajk}} </p>
+    <div class="btn-group">
+      <button class="btn btn-outline-success btn-sm" (click)="like()" >
+        Like
+      </button>
+      <button class="btn btn-outline-danger btn-sm" (click)="dislike()">
+        Dislike 
+      </button>
+      <button class="btn btn-outline-dark btn-sm" (click)="obrisiVino()">
+        Ukloni
+      </button>
+    </div>
 </div>

@@ -1,48 +1,62 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { VinarijaComponent } from './components/vinarija/vinarija.component';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-
-
+import { FormsModule } from '@angular/forms';
+import { NgModule, forwardRef } from '@angular/core';
+import { RouterModule, Routes} from '@angular/router';
 import {StoreModule} from '@ngrx/store';
-import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import {rootReducer} from './store';
+import { EffectsModule } from '@ngrx/effects';
 
-//components
+import {rootReducer } from './store/reducers'
+import {effects} from './store/effects';
+
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ListaVinoComponent } from './components/lista-vino/lista-vino.component';
 import { HomeComponent } from './components/home/home.component';
-import { AddvinoComponent } from './components/addvino/addvino.component';
 import { VinoComponent } from './components/vino/vino.component';
-import { VinodetaljiComponent } from './components/vinodetalji/vinodetalji.component';
+import { DodajVinoFormComponent } from './components/dodaj-vino-form/dodaj-vino-form.component';
+import { VinoService} from './services/vino-service/vino.service';
+//import { ZanroviService } from './services/zanrovi-service/zanrovi.service';
+import { HttpClientModule} from '@angular/common/http';
 
+
+// ovde podesavamo ruting
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'dodajvino', component:AddvinoComponent},
-  { path: 'vinarija', component: VinarijaComponent }
-];
+  { 
+    path: 'booklist', 
+    component: ListaVinoComponent 
+  },
+  {
+    path: 'dodajvino',
+    component: DodajVinoFormComponent
+  },
+  {
+    path: "",
+    component: HomeComponent
+   
+  }
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    VinarijaComponent,
+    NavbarComponent,
+    ListaVinoComponent,
     HomeComponent,
-    AddvinoComponent,
     VinoComponent,
-    VinodetaljiComponent
+    DodajVinoFormComponent,
   ],
   imports: [
-    BrowserModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    RouterModule.forRoot(
-      appRoutes,
-      // { enableTracing: true } // <-- debugging purposes only
-    ),
     StoreModule.forRoot(rootReducer),
-    StoreDevtoolsModule.instrument({})
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    EffectsModule.forRoot(effects)
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [
+    VinoService,
+    //ZanroviService 
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
