@@ -3,6 +3,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Vino } from '../../models/vino';
 import { Observable} from 'rxjs';
 
+const URL_ROOT = 'http://localhost:3005/vinarija'
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,23 +16,23 @@ export class VinoService {
 
   public getBooks(): Observable<Vino[]> {
     
-    return this.http.get<Vino[]>('http://localhost:3005/vinarija');
+    return this.http.get<Vino[]>(URL_ROOT);
   }
   
   public addVino(vino: Vino) {
 
-    this.http.post('http://localhost:3005/vinarija', vino)
+    this.http.post(URL_ROOT, vino)
               .subscribe(response => console.log(response)); 
           
   }
 
   public updateVino(vino: Vino) {
-    this.http.put(`http://localhost:3005/vinarija/${vino.id}`, vino)
+    this.http.put(`${URL_ROOT}${vino.id}`, vino)
             .subscribe(response => console.log(response)); 
   }
 
   public DeleteVino(vino: Vino) {
-    this.http.delete(`http://localhost:3005/vinarija/${vino.id}`) 
+    this.http.delete(`${URL_ROOT}${vino.id}`) 
               .subscribe(response => console.log(response));
   }
 
